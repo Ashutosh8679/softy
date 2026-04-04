@@ -38,7 +38,7 @@ void loop() {
   }
 }
 
-// 🔁 Smooth mirrored movement
+// Smooth mirrored movement
 void moveServos(int target) {
 
   if (target > currentPos) {
