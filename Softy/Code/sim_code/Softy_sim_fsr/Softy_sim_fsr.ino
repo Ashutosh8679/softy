@@ -40,7 +40,7 @@ void loop() {
   }
 }
 
-// 🔁 Movement with FORCE STOP
+//  Movement with FORCE STOP
 void moveServos(int target) {
 
   if (target > currentPos) {
@@ -48,7 +48,7 @@ void moveServos(int target) {
 
       int fsrValue = analogRead(fsrPin);
 
-      // 🛑 STOP CONDITION
+      //  STOP CONDITION
       if (fsrValue >= FORCE_THRESHOLD) {
         Serial.println("Force limit reached! Stopping.");
         return;
@@ -63,7 +63,7 @@ void moveServos(int target) {
 
       int fsrValue = analogRead(fsrPin);
 
-      // 🛑 STOP CONDITION
+      // STOP CONDITION
       if (fsrValue >= FORCE_THRESHOLD) {
         Serial.println("Force limit reached! Stopping.");
         return;
